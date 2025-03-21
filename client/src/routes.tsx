@@ -26,6 +26,7 @@ import AddBookPage from "./pages/system/book.system/add.book.system.page/add.boo
 import addBookAction from "./pages/system/book.system/add.book.system.page/add.book.system.action";
 import HistoryPage from "./pages/history/history.page";
 import historyLoader from "./pages/history/history.loader";
+import PoliciesPage from "./pages/policies/policies.page";
 
 let routes: RouteObject[] = [];
 routes = [
@@ -74,6 +75,10 @@ routes = [
         path: "/",
         index: true,
         element: <HomePage />,
+      },
+      {
+        path: "policies",
+        element: <PoliciesPage />,
       },
       {
         path: "booksearch",

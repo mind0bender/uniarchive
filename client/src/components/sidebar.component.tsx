@@ -30,7 +30,8 @@ function Sidebar(): JSX.Element {
         <button
           title={isOpen ? "Close Sidebar" : "Open Sidebar"}
           className={`rounded-full borde border-dark/50 w-fit p-2 bg-secondary outline-none cursor-pointer`}
-          onClick={(): void => setIsOpen((pIs: boolean): boolean => !pIs)}>
+          onClick={(): void => setIsOpen((pIs: boolean): boolean => !pIs)}
+        >
           {isOpen ? <SidebarClose size={20} /> : <SidebarOpen size={20} />}
         </button>
 
@@ -44,7 +45,8 @@ function Sidebar(): JSX.Element {
                     : " hover:bg-secondary/70 hover:ring ring-secondary duration-200"
                 }`
               }
-              to={`/`}>
+              to={`/`}
+            >
               <Home size={18} />
               Home
             </NavLink>
@@ -58,7 +60,8 @@ function Sidebar(): JSX.Element {
                     : " hover:bg-secondary/70 hover:ring ring-secondary duration-200"
                 }`
               }
-              to={`/history`}>
+              to={`/history`}
+            >
               <History size={18} />
               History
             </NavLink>
@@ -72,7 +75,8 @@ function Sidebar(): JSX.Element {
                     : " hover:bg-secondary/70 hover:ring ring-secondary duration-200"
                 }`
               }
-              to={`/polocies`}>
+              to={`/policies`}
+            >
               <FileText size={18} />
               Policies
             </NavLink>
@@ -86,7 +90,8 @@ function Sidebar(): JSX.Element {
                     : " hover:bg-secondary/70 hover:ring ring-secondary duration-200"
                 }`
               }
-              to={`/settings`}>
+              to={`/settings`}
+            >
               <Settings size={18} />
               Settings
             </NavLink>
@@ -98,7 +103,8 @@ function Sidebar(): JSX.Element {
           <button
             className={`flex items-center cursor-pointer gap-2 px-3 rounded-lg py-2 hover:bg-secondary duration-200 ${
               isOpen || "hidden"
-            }`}>
+            }`}
+          >
             <LogOut size={18} />
             Logout
           </button>
